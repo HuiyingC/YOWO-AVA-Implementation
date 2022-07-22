@@ -163,7 +163,7 @@ def video_ap_one_class(gt, pred_videos, iou_thresh = 0.2, bTemporal = False, gtl
                     else:
                         iou = np.array([iou3d(g, boxes[:,:5]) for g in gt_this]) 
 
-                if iou.size > 0: # on ucf101 if invalid annotation ....
+                if iou.size > 0: # on ucf101 if invalid annotations ....
                     argmax = np.argmax(iou)
                     if iou[argmax] >= iou_thresh:
                         ispositive = True
@@ -186,7 +186,7 @@ def gt_to_videts(gt_v):
     keys.sort()
     res = []
     for i in range(len(keys)):
-        # annotation of the video: tubes and gt_classes
+        # annotations of the video: tubes and gt_classes
         v_annot = gt_v[keys[i]]
         for j in range(len(v_annot['tubes'])):
             res.append([v_annot['gt_classes'], i+1, v_annot['tubes'][j]])

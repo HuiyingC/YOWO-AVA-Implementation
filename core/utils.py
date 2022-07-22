@@ -55,7 +55,7 @@ def softmax(x):
     x = x/x.sum()
     return x
 
-
+# ====== ↓ use for eval/loss calculation (ground truth overlaps detection) -ying ====== #
 def bbox_iou(box1, box2, x1y1x2y2=True):
     if x1y1x2y2:
         mx = min(box1[0], box2[0])

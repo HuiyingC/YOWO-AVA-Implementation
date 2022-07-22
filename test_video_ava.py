@@ -1,5 +1,14 @@
 import os
 import cv2
+# updated by ying
+# $ ImportError: libgtk-x11-2.0.so.0: cannot open shared object file: No such file or directory
+#   apt-get install libgtk2.0-dev
+# pip install opencv-python
+# ImportError: libopenh264.so.5: cannot open shared object file: No such file or directory
+#   https://blog.csdn.net/u011507206/article/details/118710583
+# AttributeError: partially initialized module 'cv2' has no attribute 'gapi_wip_gst_GStreamerPipeline' (most likely due to a circular import)
+#   pip install opencv-python==4.5.5.64
+
 import sys
 import time
 import math
@@ -29,7 +38,7 @@ from core.model import YOWO, get_fine_tuning_parameters
 # ---------------------------------------------------------------
 args  = parser.parse_args()
 cfg   = parser.load_config(args)
-
+# print('cfg:', cfg)   # updated by ying  # modify default paths in cfg/defaults.py
 
 ####### Create model
 # ---------------------------------------------------------------
@@ -55,7 +64,7 @@ if cfg.TRAIN.RESUME_PATH:
 ####### Test parameters
 # ---------------------------------------------------------------
 
-labelmap, _       = read_labelmap("/usr/home/sut/datasets/AVA/annotations/ava_action_list_v2.2.pbtxt")
+labelmap, _       = read_labelmap("datasets/ava_data/ava_action/annotations/ava_action_list_v2.2.pbtxt")
 num_classes       = cfg.MODEL.NUM_CLASSES
 clip_length		  = cfg.DATA.NUM_FRAMES
 crop_size 		  = cfg.DATA.TEST_CROP_SIZE
@@ -75,7 +84,7 @@ model.eval()
 
 ####### Data preparation and inference 
 # ---------------------------------------------------------------
-video_path = '/usr/home/sut/datasets/AVA/video_done/9Y_l9NsnYE0.mp4'
+video_path = '/datasets/ava_data/ava_action/frames/N5UD8FGzDek.mkv'
 cap = cv2.VideoCapture(video_path)
 
 cnt = 1

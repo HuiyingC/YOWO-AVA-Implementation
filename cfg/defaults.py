@@ -569,22 +569,22 @@ _C.AVA = CfgNode()
 
 # Directory path of frames.
 # _C.AVA.FRAME_DIR = "/mnt/fair-flash3-east/ava_trainval_frames.img/"
-_C.AVA.FRAME_DIR = "/usr/home/sut/datasets/AVA/frames/"
+_C.AVA.FRAME_DIR = "/home/hchen/PycharmProjects/YOWO/datasets/ava_data/ava_action/frames/"
 
 # Directory path for files of frame lists.
 # _C.AVA.FRAME_LIST_DIR = (
 #     "/mnt/vol/gfsai-flash3-east/ai-group/users/haoqifan/ava/frame_list/"
 # )
 _C.AVA.FRAME_LIST_DIR = (
-    "/usr/home/sut/datasets/AVA/frame_lists/"
+    "/home/hchen/PycharmProjects/YOWO/datasets/ava_data/ava_action/frame_lists/"
 )
 
-# Directory path for annotation files.
+# Directory path for annotations files.
 # _C.AVA.ANNOTATION_DIR = (
 #     "/mnt/vol/gfsai-flash3-east/ai-group/users/haoqifan/ava/frame_list/"
 # )
 _C.AVA.ANNOTATION_DIR = (
-    "/usr/home/sut/datasets/AVA/annotations/"
+    "/home/hchen/PycharmProjects/YOWO/datasets/ava_data/ava_action/annotations/"
 )
 
 # Filenames of training samples list files.
@@ -651,19 +651,19 @@ _C.AVA.IMG_PROC_BACKEND = "cv2"
 # -----------------------------------------------------------------------------
 # list Dataset options
 # -----------------------------------------------------------------------------
-_C.LISTDATA = CfgNode()
-_C.LISTDATA.BASE_PTH = "/usr/home/sut/datasets/ucf24"
-_C.LISTDATA.TRAIN_FILE = "/usr/home/sut/datasets/ucf24/trainlist.txt"
-_C.LISTDATA.TEST_FILE = "/usr/home/sut/datasets/ucf24/testlist.txt"
-_C.LISTDATA.TEST_VIDEO_FILE = "/usr/home/sut/datasets/ucf24/testlist_video.txt"
-_C.LISTDATA.MAX_OBJS = 6
-_C.LISTDATA.CLASS_NAMES = [
-    "Basketball", "BasketballDunk", "Biking", "CliffDiving", "CricketBowling", 
-    "Diving", "Fencing", "FloorGymnastics", "GolfSwing", "HorseRiding",
-    "IceDancing", "LongJump", "PoleVault", "RopeClimbing", "SalsaSpin",
-    "SkateBoarding", "Skiing", "Skijet", "SoccerJuggling", "Surfing",
-    "TennisSwing", "TrampolineJumping", "VolleyballSpiking", "WalkingWithDog"
-]
+# _C.LISTDATA = CfgNode()
+# _C.LISTDATA.BASE_PTH = "/usr/home/sut/datasets/ucf24"
+# _C.LISTDATA.TRAIN_FILE = "/usr/home/sut/datasets/ucf24/trainlist.txt"
+# _C.LISTDATA.TEST_FILE = "/usr/home/sut/datasets/ucf24/testlist.txt"
+# _C.LISTDATA.TEST_VIDEO_FILE = "/usr/home/sut/datasets/ucf24/testlist_video.txt"
+# _C.LISTDATA.MAX_OBJS = 6
+# _C.LISTDATA.CLASS_NAMES = [
+#     "Basketball", "BasketballDunk", "Biking", "CliffDiving", "CricketBowling",
+#     "Diving", "Fencing", "FloorGymnastics", "GolfSwing", "HorseRiding",
+#     "IceDancing", "LongJump", "PoleVault", "RopeClimbing", "SalsaSpin",
+#     "SkateBoarding", "Skiing", "Skijet", "SoccerJuggling", "Surfing",
+#     "TennisSwing", "TrampolineJumping", "VolleyballSpiking", "WalkingWithDog"
+# ]
 
 # Add custom config with default values.
 custom_config.add_custom_config(_C)

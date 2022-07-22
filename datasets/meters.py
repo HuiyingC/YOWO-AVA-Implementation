@@ -44,6 +44,7 @@ def get_ava_mini_groundtruth(full_groundtruth):
 
 
 class AVAMeter(object):
+    """Computes and stores the average and current value"""
     def __init__(self, cfg, mode, output_json):
         self.cfg = cfg
         self.all_preds = []

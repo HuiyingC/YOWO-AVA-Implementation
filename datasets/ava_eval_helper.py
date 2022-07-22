@@ -124,7 +124,7 @@ def read_labelmap(labelmap_file):
 
 
 def evaluate_ava_from_files(labelmap, groundtruth, detections, exclusions):
-    """Run AVA evaluation given annotation/prediction files."""
+    """Run AVA evaluation given annotations/prediction files."""
 
     categories, class_whitelist = read_labelmap(labelmap)
     excluded_keys = read_exclusions(exclusions)

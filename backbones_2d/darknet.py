@@ -14,7 +14,7 @@ class MaxPoolStride1(nn.Module):
         x = F.max_pool2d(F.pad(x, (0,1,0,1), mode='replicate'), 2, stride=1)
         return x
 
-class Reorg(nn.Module):
+class Reorg(nn.Module):     # ??? -ying
     def __init__(self, stride=2):
         super(Reorg, self).__init__()
         self.stride = stride

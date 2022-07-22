@@ -95,6 +95,7 @@ def random_short_side_scale_jitter_list(images, min_size, max_size, boxes=None):
 
 
 def cdet_preprocess(images, boxes, pad=31, mean=[0.45, 0.45, 0.45]):
+    # Forms a border around an image  -ying
     height, width, _ = images[0].shape
     inp_height = (height | pad) + 1  # divisible by 32
     inp_width = (width | pad) + 1

@@ -1,3 +1,8 @@
+# Customized
+datasets/ava_data/videos
+datasets/ava_data/ava_action
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
