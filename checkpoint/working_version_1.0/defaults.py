@@ -325,7 +325,7 @@ _C.DATA.DEBUG = True
 _C.SOLVER = CfgNode()
 
 # Base learning rate.
-_C.SOLVER.BASE_LR = 0.001  # original 0.1 -ying
+_C.SOLVER.BASE_LR = 0.1
 
 # Learning rate policy (see utils/lr_policy.py for options and examples).
 _C.SOLVER.LR_POLICY = "cosine"
@@ -373,7 +373,7 @@ _C.SOLVER.WARMUP_START_LR = 0.01
 _C.SOLVER.ANCHORS = [0.70458, 1.18803, 1.26654, 2.55121, 1.59382, 4.08321, 2.30548, 4.94180, 3.52332, 5.91979]
 
 # The number of anchors
-_C.SOLVER.NUM_ANCHORS = 10   # original 5 -ying
+_C.SOLVER.NUM_ANCHORS = 5
 
 # Scales for different parts of loss
 _C.SOLVER.OBJECT_SCALE = 5

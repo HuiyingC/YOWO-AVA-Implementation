@@ -1,0 +1,126 @@
+Error processing line 1 of /home/hchen/anaconda3/envs/YOWO2/lib/python3.8/site-packages/google_auth-1.35.0-py3.9-nspkg.pth:
+
+  Traceback (most recent call last):
+    File "/home/hchen/anaconda3/envs/YOWO2/lib/python3.8/site.py", line 169, in addpackage
+      exec(line)
+    File "<string>", line 1, in <module>
+    File "<frozen importlib._bootstrap>", line 553, in module_from_spec
+  AttributeError: 'NoneType' object has no attribute 'loader'
+
+Remainder of file ignored
+Error processing line 1 of /home/hchen/anaconda3/envs/YOWO2/lib/python3.8/site-packages/matplotlib-3.5.2-py3.8-nspkg.pth:
+
+  Traceback (most recent call last):
+    File "/home/hchen/anaconda3/envs/YOWO2/lib/python3.8/site.py", line 169, in addpackage
+      exec(line)
+    File "<string>", line 1, in <module>
+    File "<frozen importlib._bootstrap>", line 553, in module_from_spec
+  AttributeError: 'NoneType' object has no attribute 'loader'
+
+Remainder of file ignored
+2022-07-24 15:46:01 Total number of trainable parameters: 121381770
+ann_filename: /home/hchen/PycharmProjects/YOWO/datasets/ava_data/ava_action/annotations_sample/ava_train_v2.2.csv
+train_dataset <datasets.ava_dataset.Ava object at 0x7f4f11d6f7f0>
+ann_filename: /home/hchen/PycharmProjects/YOWO/datasets/ava_data/ava_action/annotations_sample/ava_val_v2.2.csv
+test_dataset <datasets.ava_dataset.Ava object at 0x7f4f3082ca00>
+2022-07-24 15:46:01 evaluating ...
+/home/hchen/PycharmProjects/YOWO/core/utils.py:371: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  pose_cls_confs = torch.nn.Softmax()(Variable(output[5:5+14].transpose(0,1))).data  ############## MODIFICATION
+2022-07-24 15:46:12 [0/36]
+2022-07-24 15:46:20 [1/36]
+2022-07-24 15:46:28 [2/36]
+2022-07-24 15:46:36 [3/36]
+2022-07-24 15:46:44 [4/36]
+2022-07-24 15:46:52 [5/36]
+2022-07-24 15:47:00 [6/36]
+2022-07-24 15:47:08 [7/36]
+2022-07-24 15:47:16 [8/36]
+2022-07-24 15:47:24 [9/36]
+2022-07-24 15:47:32 [10/36]
+2022-07-24 15:47:40 [11/36]
+2022-07-24 15:47:47 [12/36]
+2022-07-24 15:47:55 [13/36]
+2022-07-24 15:48:03 [14/36]
+2022-07-24 15:48:11 [15/36]
+2022-07-24 15:48:19 [16/36]
+2022-07-24 15:48:27 [17/36]
+2022-07-24 15:48:35 [18/36]
+2022-07-24 15:48:43 [19/36]
+2022-07-24 15:48:51 [20/36]
+2022-07-24 15:48:59 [21/36]
+2022-07-24 15:49:07 [22/36]
+2022-07-24 15:49:15 [23/36]
+2022-07-24 15:49:23 [24/36]
+2022-07-24 15:49:31 [25/36]
+2022-07-24 15:49:39 [26/36]
+2022-07-24 15:49:47 [27/36]
+2022-07-24 15:49:55 [28/36]
+2022-07-24 15:50:03 [29/36]
+2022-07-24 15:50:11 [30/36]
+2022-07-24 15:50:20 [31/36]
+2022-07-24 15:50:28 [32/36]
+2022-07-24 15:50:36 [33/36]
+2022-07-24 15:50:44 [34/36]
+2022-07-24 15:50:51 [35/36]
+{ 'PascalBoxes_PerformanceByCategory/AP@0.5IOU/answer phone': nan,
+  'PascalBoxes_PerformanceByCategory/AP@0.5IOU/bend/bow (at the waist)': 0.0,
+  'PascalBoxes_PerformanceByCategory/AP@0.5IOU/carry/hold (an object)': 0.0,
+  'PascalBoxes_PerformanceByCategory/AP@0.5IOU/climb (e.g., a mountain)': nan,
+  'PascalBoxes_PerformanceByCategory/AP@0.5IOU/close (e.g., a door, a box)': nan,
+  'PascalBoxes_PerformanceByCategory/AP@0.5IOU/crouch/kneel': nan,
+  'PascalBoxes_PerformanceByCategory/AP@0.5IOU/cut': nan,
+  'PascalBoxes_PerformanceByCategory/AP@0.5IOU/dance': nan,
+  'PascalBoxes_PerformanceByCategory/AP@0.5IOU/dress/put on clothing': nan,
+  'PascalBoxes_PerformanceByCategory/AP@0.5IOU/drink': nan,
+  'PascalBoxes_PerformanceByCategory/AP@0.5IOU/drive (e.g., a car, a truck)': nan,
+  'PascalBoxes_PerformanceByCategory/AP@0.5IOU/eat': nan,
+  'PascalBoxes_PerformanceByCategory/AP@0.5IOU/enter': nan,
+  'PascalBoxes_PerformanceByCategory/AP@0.5IOU/fall down': nan,
+  'PascalBoxes_PerformanceByCategory/AP@0.5IOU/fight/hit (a person)': nan,
+  'PascalBoxes_PerformanceByCategory/AP@0.5IOU/get up': 0.0,
+  'PascalBoxes_PerformanceByCategory/AP@0.5IOU/give/serve (an object) to (a person)': nan,
+  'PascalBoxes_PerformanceByCategory/AP@0.5IOU/grab (a person)': nan,
+  'PascalBoxes_PerformanceByCategory/AP@0.5IOU/hand clap': nan,
+  'PascalBoxes_PerformanceByCategory/AP@0.5IOU/hand shake': nan,
+  'PascalBoxes_PerformanceByCategory/AP@0.5IOU/hand wave': nan,
+  'PascalBoxes_PerformanceByCategory/AP@0.5IOU/hit (an object)': nan,
+  'PascalBoxes_PerformanceByCategory/AP@0.5IOU/hug (a person)': nan,
+  'PascalBoxes_PerformanceByCategory/AP@0.5IOU/jump/leap': nan,
+  'PascalBoxes_PerformanceByCategory/AP@0.5IOU/kiss (a person)': nan,
+  'PascalBoxes_PerformanceByCategory/AP@0.5IOU/lie/sleep': nan,
+  'PascalBoxes_PerformanceByCategory/AP@0.5IOU/lift (a person)': nan,
+  'PascalBoxes_PerformanceByCategory/AP@0.5IOU/lift/pick up': 0.0,
+  'PascalBoxes_PerformanceByCategory/AP@0.5IOU/listen (e.g., to music)': nan,
+  'PascalBoxes_PerformanceByCategory/AP@0.5IOU/listen to (a person)': 0.0,
+  'PascalBoxes_PerformanceByCategory/AP@0.5IOU/martial art': nan,
+  'PascalBoxes_PerformanceByCategory/AP@0.5IOU/open (e.g., a window, a car door)': nan,
+  'PascalBoxes_PerformanceByCategory/AP@0.5IOU/play musical instrument': nan,
+  'PascalBoxes_PerformanceByCategory/AP@0.5IOU/point to (an object)': nan,
+  'PascalBoxes_PerformanceByCategory/AP@0.5IOU/pull (an object)': nan,
+  'PascalBoxes_PerformanceByCategory/AP@0.5IOU/push (an object)': nan,
+  'PascalBoxes_PerformanceByCategory/AP@0.5IOU/push (another person)': nan,
+  'PascalBoxes_PerformanceByCategory/AP@0.5IOU/put down': nan,
+  'PascalBoxes_PerformanceByCategory/AP@0.5IOU/read': nan,
+  'PascalBoxes_PerformanceByCategory/AP@0.5IOU/ride (e.g., a bike, a car, a horse)': nan,
+  'PascalBoxes_PerformanceByCategory/AP@0.5IOU/run/jog': 0.0,
+  'PascalBoxes_PerformanceByCategory/AP@0.5IOU/sail boat': nan,
+  'PascalBoxes_PerformanceByCategory/AP@0.5IOU/shoot': nan,
+  'PascalBoxes_PerformanceByCategory/AP@0.5IOU/sing to (e.g., self, a person, a group)': nan,
+  'PascalBoxes_PerformanceByCategory/AP@0.5IOU/sit': 0.0,
+  'PascalBoxes_PerformanceByCategory/AP@0.5IOU/smoke': nan,
+  'PascalBoxes_PerformanceByCategory/AP@0.5IOU/stand': 0.0,
+  'PascalBoxes_PerformanceByCategory/AP@0.5IOU/swim': nan,
+  'PascalBoxes_PerformanceByCategory/AP@0.5IOU/take (an object) from (a person)': nan,
+  'PascalBoxes_PerformanceByCategory/AP@0.5IOU/take a photo': nan,
+  'PascalBoxes_PerformanceByCategory/AP@0.5IOU/talk to (e.g., self, a person, a group)': 0.0,
+  'PascalBoxes_PerformanceByCategory/AP@0.5IOU/text on/look at a cellphone': nan,
+  'PascalBoxes_PerformanceByCategory/AP@0.5IOU/throw': nan,
+  'PascalBoxes_PerformanceByCategory/AP@0.5IOU/touch (an object)': 0.0,
+  'PascalBoxes_PerformanceByCategory/AP@0.5IOU/turn (e.g., a screwdriver)': nan,
+  'PascalBoxes_PerformanceByCategory/AP@0.5IOU/walk': 0.0,
+  'PascalBoxes_PerformanceByCategory/AP@0.5IOU/watch (a person)': 0.0,
+  'PascalBoxes_PerformanceByCategory/AP@0.5IOU/watch (e.g., TV)': nan,
+  'PascalBoxes_PerformanceByCategory/AP@0.5IOU/work on a computer': nan,
+  'PascalBoxes_PerformanceByCategory/AP@0.5IOU/write': nan,
+  'PascalBoxes_Precision/mAP@0.5IOU': 0.0}
+2022-07-24 15:50:55 mode: train -- mAP: 0.0

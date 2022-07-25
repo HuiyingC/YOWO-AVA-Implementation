@@ -14,14 +14,6 @@ from torchvision import datasets, transforms
 # updated by ying
 # pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu113
 
-# opencv issue
-# pip uninstall opencv-python
-# pip uninstall opencv-contrib-python
-# pip install opencv-contrib-python
-# pip install opencv-python
-
-# mAP NaN - https://github.com/pjreddie/darknet/issues/690 (solving)
-
 from datasets import list_dataset
 from datasets.ava_dataset import Ava 
 from core.optimization import *
